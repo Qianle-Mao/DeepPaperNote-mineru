@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deeppapernote-mineru"
+version = "0.1.0"
+description = "Customized DeepPaperNote skill with MinerU v4 OCR parsing and a data-mining/AI Chinese deep-note format."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "maomoneymaker" }
+]
+keywords = [
+  "agent-skill",
+  "obsidian",
+  "zotero",
+  "deep-reading",
+  "paper-reading",
+  "research-paper",
+  "markdown",
+  "mineru",
+  "continual-learning"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+  "PyMuPDF>=1.24",
+]
+
+[project.urls]
+Homepage = "https://github.com/maomoneymaker-debug/DeepPaperNote-mineru"
+Repository = "https://github.com/maomoneymaker-debug/DeepPaperNote-mineru"
+Issues = "https://github.com/maomoneymaker-debug/DeepPaperNote-mineru/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6.0",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
